@@ -93,7 +93,7 @@
                                                         </constraints>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="BYZ-38-t0r" id="7cn-yh-PZl"/>
                                                         </connections>
@@ -106,7 +106,7 @@
                                                         </constraints>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="BYZ-38-t0r" id="a3j-9t-WD4"/>
                                                         </connections>
@@ -141,6 +141,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Find"/>
                                         <connections>
+                                            <action selector="findDayTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VvG-hf-NHL"/>
                                             <action selector="findWeekDayTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U9j-LR-bad"/>
                                         </connections>
                                     </button>
@@ -168,6 +169,7 @@
                     <navigationItem key="navigationItem" title="Day Finder" id="wsq-tH-myX"/>
                     <connections>
                         <outlet property="dayTextField" destination="SLx-9A-VG5" id="S1u-lS-m95"/>
+                        <outlet property="handleCalculation" destination="Ihq-cz-lk5" id="OzK-aG-WaS"/>
                         <outlet property="monthTextField" destination="yY3-af-ueV" id="bRS-Ix-PWt"/>
                         <outlet property="resultLabel" destination="Ihq-cz-lk5" id="Hza-jM-71t"/>
                         <outlet property="yearTextField" destination="26h-eB-7Ae" id="hYG-KU-J3n"/>
@@ -175,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-55" y="-307"/>
+            <point key="canvasLocation" x="-625" y="-509"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3eK-5H-RxB">

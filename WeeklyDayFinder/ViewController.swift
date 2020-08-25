@@ -45,6 +45,7 @@ class ViewController: UIViewController, UIApplicationDelegate {
             print("calendar.date err")
             return
         }
+    
         
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_EN")
@@ -55,8 +56,11 @@ class ViewController: UIViewController, UIApplicationDelegate {
         
         
     }
-    @IBAction func findWeekDayTapped(_ sender: Any) {
+    
+    @IBAction func findDayTapped(_ sender: Any) {
+      handleCalculation()
     }
+    
     
 }
 
