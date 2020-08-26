@@ -82,7 +82,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                                                         <connections>
-                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Wft-QR-ymY"/>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="hae-WH-4SR"/>
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yY3-af-ueV">
@@ -141,8 +141,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Find"/>
                                         <connections>
-                                            <action selector="findDayTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VvG-hf-NHL"/>
-                                            <action selector="findWeekDayTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U9j-LR-bad"/>
+                                            <action selector="findTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D5n-S6-rEh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -169,15 +168,14 @@
                     <navigationItem key="navigationItem" title="Day Finder" id="wsq-tH-myX"/>
                     <connections>
                         <outlet property="dayTextField" destination="SLx-9A-VG5" id="S1u-lS-m95"/>
-                        <outlet property="handleCalculation" destination="Ihq-cz-lk5" id="OzK-aG-WaS"/>
-                        <outlet property="monthTextField" destination="yY3-af-ueV" id="bRS-Ix-PWt"/>
-                        <outlet property="resultLabel" destination="Ihq-cz-lk5" id="Hza-jM-71t"/>
-                        <outlet property="yearTextField" destination="26h-eB-7Ae" id="hYG-KU-J3n"/>
+                        <outlet property="monthTextField" destination="yY3-af-ueV" id="BiG-ev-3Ds"/>
+                        <outlet property="resultLabel" destination="Ihq-cz-lk5" id="z0u-ao-36g"/>
+                        <outlet property="yearTextField" destination="26h-eB-7Ae" id="bCI-VI-v9y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-625" y="-509"/>
+            <point key="canvasLocation" x="266" y="300"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3eK-5H-RxB">
