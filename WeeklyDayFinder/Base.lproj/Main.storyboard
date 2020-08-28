@@ -116,45 +116,60 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M9m-Ns-73D">
-                                <rect key="frame" x="99" y="329" width="123" height="65"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7CG-8Y-Pof">
+                                <rect key="frame" x="113" y="358" width="149" height="68"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day of the week" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihq-cz-lk5">
-                                        <rect key="frame" x="0.0" y="0.0" width="123" height="27"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="27" id="xW6-A2-n5M"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMm-Zu-G6B">
-                                        <rect key="frame" x="0.0" y="35" width="123" height="30"/>
-                                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        <state key="normal" title="Find"/>
-                                        <connections>
-                                            <action selector="findTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D5n-S6-rEh"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tce-fW-mNo">
+                                        <rect key="frame" x="0.0" y="0.0" width="149" height="68"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M9m-Ns-73D">
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="68"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day of the week" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihq-cz-lk5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="149" height="30"/>
+                                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="PSl-Ia-J8R"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMm-Zu-G6B">
+                                                        <rect key="frame" x="0.0" y="38" width="149" height="30"/>
+                                                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="KBJ-Wi-965"/>
+                                                        </constraints>
+                                                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <state key="normal" title="Find"/>
+                                                        <connections>
+                                                            <action selector="findTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D5n-S6-rEh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="7CG-8Y-Pof" firstAttribute="top" secondItem="26h-eB-7Ae" secondAttribute="bottom" constant="64.333333333333314" id="08N-fD-SCj"/>
                             <constraint firstItem="0Sp-F0-mHH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1ff-bi-4Ag"/>
-                            <constraint firstItem="M9m-Ns-73D" firstAttribute="top" secondItem="8Rw-DH-1AE" secondAttribute="bottom" constant="35.5" id="2d6-yw-BTh"/>
+                            <constraint firstItem="Ihq-cz-lk5" firstAttribute="centerX" secondItem="0Sp-F0-mHH" secondAttribute="centerX" id="Cyh-uV-gl9"/>
                             <constraint firstItem="0Sp-F0-mHH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FpK-fS-5JM"/>
                             <constraint firstItem="0Sp-F0-mHH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GYf-0D-3lH"/>
                             <constraint firstItem="Wye-ce-KgJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ImB-NH-uLI"/>
                             <constraint firstItem="8Rw-DH-1AE" firstAttribute="top" secondItem="GYy-qh-rZ1" secondAttribute="bottom" constant="32" id="NT1-WZ-1ij"/>
+                            <constraint firstItem="DMm-Zu-G6B" firstAttribute="top" secondItem="26h-eB-7Ae" secondAttribute="bottom" constant="102.33333333333331" id="OYh-l2-0FK"/>
                             <constraint firstItem="0Sp-F0-mHH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QaJ-Ja-bmd"/>
                             <constraint firstItem="GYy-qh-rZ1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="VNs-Q2-Wfu"/>
                             <constraint firstItem="GYy-qh-rZ1" firstAttribute="centerX" secondItem="0Sp-F0-mHH" secondAttribute="centerX" id="fbQ-Wm-e1j"/>
                             <constraint firstItem="SLx-9A-VG5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jjI-kZ-Wpr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GYy-qh-rZ1" secondAttribute="trailing" symbolic="YES" id="lBW-KR-U0p"/>
                             <constraint firstItem="GYy-qh-rZ1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="oKY-1w-KrL"/>
-                            <constraint firstItem="M9m-Ns-73D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="yyp-Oy-kr4"/>
+                            <constraint firstItem="0Sp-F0-mHH" firstAttribute="leading" secondItem="Ihq-cz-lk5" secondAttribute="trailing" constant="-262" id="oXs-YY-IB0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -182,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66" y="0.0"/>
+            <point key="canvasLocation" x="-511" y="-16"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="lSy-xW-wHo">
@@ -234,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQp-p8-IRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="598"/>
+            <point key="canvasLocation" x="649" y="369"/>
         </scene>
         <!--Appearance View Controller-->
         <scene sceneID="5HZ-pX-mWg">
@@ -303,12 +318,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NkX-HM-7rE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-769" y="0.0"/>
+            <point key="canvasLocation" x="-1272" y="-3"/>
         </scene>
     </scenes>
     <resources>
         <image name="clear.fill" catalog="system" width="128" height="114"/>
-        <image name="day" width="1600" height="1200"/>
+        <image name="day" width="1920" height="1280"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="moon.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
