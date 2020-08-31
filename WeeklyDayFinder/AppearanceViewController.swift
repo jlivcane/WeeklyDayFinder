@@ -16,13 +16,13 @@ class AppearanceViewController: UIViewController {
         super.viewDidLoad()
         setLabelText()
     }
-
+    
     
     @IBAction func openSettingsTapped(_ sender: Any) {
         
         guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else {
-        return
-    }
+            return
+        }
         if UIApplication.shared.canOpenURL(settingsURL){
             UIApplication.shared.open(settingsURL, options: [:]) { (success) in
                 print(success)
@@ -37,14 +37,14 @@ class AppearanceViewController: UIViewController {
         }else{
             text = "Light Mode is on. \nGo to settings if you would like\nto change to Dark Mode."
         }
-       TextLabel.text = text
+        TextLabel.text = text
         
     }
 }
 
 extension AppearanceViewController {
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-      setLabelText()
+        setLabelText()
     }
 }
 

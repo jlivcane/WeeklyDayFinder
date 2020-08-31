@@ -9,7 +9,7 @@
 import UIKit
 
 class InfoViewController: UIViewController {
-
+    
     @IBOutlet weak var appInfoLabel: UILabel!
     @IBOutlet weak var appDescriptionLabel: UILabel!
     
@@ -32,6 +32,6 @@ class InfoViewController: UIViewController {
         print("dismiss View Controller")
     }
     
-   
-
+    
+    
 }
